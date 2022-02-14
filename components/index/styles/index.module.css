@@ -1,0 +1,134 @@
+.test{
+    color: black;
+}
+
+.container{
+    width:100vw;
+    height:100vh;
+    background-color: rgb(20, 20, 25);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 12fr 1fr;
+}
+
+.first{
+    background-color: rgb(20, 20, 25);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+}
+
+.navContainer{
+    color: white;
+    transition: 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+}
+
+.navContainer:hover{
+    background-color: rgb(36, 36, 43);
+    cursor: pointer;
+}
+
+.second{
+    background-color: rgb(20, 20, 25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero{
+    width: 95%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 5px;
+}
+
+.third{
+    background-color: rgb(39, 39, 46);
+}
+
+.title{
+    color: white;
+    font-weight: bolder;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    grid-row: 2 / 7;
+    grid-column: 1 / 15;
+    font-size: 5rem;
+    /* border: 1px solid white; */
+    padding: 1rem;
+}
+
+.subtitle{
+    border: 1px solid white;
+    grid-column: 1 / 15;
+    grid-row: 7 / 11;
+}
+
+.verticalPhoto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: 15 / 20;
+    grid-row: 2 / 17;
+    font-size: 4rem;
+    color: white;
+    background-image: url('/moth2.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.me{
+    /* border: 1px solid white; */
+    grid-column: 15 / 20;
+    grid-row: 17 / 20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.horizontalPhoto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 4rem;
+    grid-column: 7 / 15;
+    grid-row: 11 / 20;
+    background-image: url('/moth.jpg');
+    background-position: top -100px right 1px;
+    background-size: cover;
+}
+
+.mote{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 4rem;
+    border: 1px solid white;
+    grid-row: 11 / 16;
+    grid-column: 1 / 7;
+}
+
+.interests{
+    border: 1px solid white;
+    grid-row: 16 / 20;
+    grid-column: 1 / 7;
+}
+
+.placeholder{
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
